@@ -47,6 +47,7 @@ class Baskin31Game:
                 print("오류: 숫자만 입력할 수 있습니다.")
 
     def play_turn(self, player_name, numbers):
+        
         # 2) 지정된 갯수만큼 숫자를 연속으로 부를때
         print(f"{player_name}: ", end="")
         
@@ -93,10 +94,10 @@ class Baskin31Game:
             self.play_turn("상대", com_numbers)
             
             if self.current_number >= 31:
-                print("\n축하합니다!! 상대가 31을 불러서, 당신이 '승리'했습니다!!!!")
+                print("\n★★★ 축하합니다!!★★★ \n상대가 31을 불러서, 당신이 '승리'했습니다!!!!")
                 break
 
-""" # 실제 게임 실행 부분(확인용)
+# 실제 게임 실행 부분(확인용)
 if __name__ == "__main__":
     game = Baskin31Game()
-    game.start_game() """
+    game.start_game()
